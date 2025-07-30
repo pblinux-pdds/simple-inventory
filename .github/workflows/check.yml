@@ -1,4 +1,4 @@
-name: simple-inventory-deploy
+name: simple-inventory-check
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  build-and-check:
     runs-on: ubuntu-latest
 
     steps:
@@ -32,6 +32,3 @@ jobs:
 
       - name: Build project
         run: npm run build
-
-      # Deploy to Render
-      # WIP
